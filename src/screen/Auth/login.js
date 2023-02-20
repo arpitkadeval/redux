@@ -37,7 +37,6 @@ const Login = () => {
 
   const isLoggingIn = false;
   useEffect(() => {
-    debugger;
     if (auth.token && auth.data?.type === "admin") {
       navigate("admin/dashboard");
     } else if (auth.token && auth.data?.type === "user") {
